@@ -10,3 +10,12 @@ It was made for the AffiliateWP and EDD teams, but can be quickly adjusted for a
 - To customize the Github repo, change line
 
 ### Installation
+
+To run this extension:
+
+- Download/clone the entire master branch and unzip
+- Put the files wherever you want them locally to work on
+- In Chrome, go to chrome://extensions and turn on developer mode
+- Hit the Load Unpacked Extension button and select the project folder
+- That's pretty much it
+
