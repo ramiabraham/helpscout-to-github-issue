@@ -1,0 +1,31 @@
+{
+  "manifest_version": 2,
+  "name": "HelpScout -> Github Integration",
+  "description": "Injects Create Github Issue button into HS ticket views",
+  "version": "1.0",
+  "browser_action": {
+    "default_icon": "assets/icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://secure.helpscout.net/conversation/*/*",
+        "*://secure.helpscout.net/mailbox/*/*"
+      ],
+      "js": [
+        "assets/single-ticket.js",
+        "assets/ticket-list.js",
+        "assets/main.js"
+      ],
+      "css": [
+        "assets/style.css"
+      ],
+      "run_at": "document_start"
+    }
+  ],
+  "permissions": [
+    "tabs",
+    "*://secure.helpscout.net/conversation/*/*",
+    "*://secure.helpscout.net/mailbox/*/*"
+  ]
+}
